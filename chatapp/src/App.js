@@ -4,7 +4,8 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  // Link
+  // eslint-disable-next-line
+  Link
 } from "react-router-dom";
 
 import ChatPage from './components/ChatPage/ChatPage';
