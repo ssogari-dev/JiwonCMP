@@ -1,7 +1,8 @@
 import React from "react";
+import './App.css'
 import {
   BrowserRouter as Router,
-  Switch,
+  Routes,
   Route,
   // Link
 } from "react-router-dom";
@@ -13,14 +14,11 @@ import RegisterPage from './components/RegisterPage/RegisterPage';
 function App(){
   return(
     <Router>
-
-        <hr />
-
-        <Switch>
+        <Routes>
           <Route exact path="/" component={ChatPage} />
-          <Route exact path="/" component={LoginPage} />
-          <Route exact path="/" component={RegisterPage} />
-        </Switch>
+          <Route exact path="/login" component={LoginPage} />
+          <Route exact path="/register" component={RegisterPage} />
+        </Routes>
     </Router>
 
   );
