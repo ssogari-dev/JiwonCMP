@@ -6,14 +6,14 @@ import "firebase/storage";
 // import firebase from "firebase/app";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDcWh9rIlcl5FCBoMpxoQ34aUf009EIH2I",
-  authDomain: "jiwoncpn.firebaseapp.com",
-  databaseURL: "https://jiwoncpn-default-rtdb.firebaseio.com",
-  projectId: "jiwoncpn",
-  storageBucket: "jiwoncpn.appspot.com",
-  messagingSenderId: "636021889166",
-  appId: "1:636021889166:web:91e97a281dbd0af09fd1df",
-  measurementId: "G-8JPRLBLEY4"
+  apiKey: process.env.REACT＿APP＿apiKey,
+  authDomain: process.env.REACT＿APP＿authDomain,
+  databaseURL: process.env.REACT＿APP＿databaseURL,
+  projectId: process.env.REACT＿APP＿projectID,
+  storageBucket: process.env.REACT＿APP＿storageBucket,
+  messagingSenderId: process.env.REACT＿APP＿messagingSenderId,
+  appId: process.env.REACT＿APP＿appId,
+  measurementId: process.env.REACT＿APP＿measurementId
 };
 
 initializeApp(firebaseConfig);
